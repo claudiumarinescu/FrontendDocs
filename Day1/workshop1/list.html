@@ -6,78 +6,73 @@
 
     <meta charset="UTF-8">
     <title>Demo HR</title>
-    <script tpe="text/javascript" src="scripts/app.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
 </head>
 <body>
-<h1> HR Employees List Page</h1>
-<div class="panel panel-default">
-    <div class="panel-heading description">Employees list</div>
-    <div class="panel-body">
-        <div>
+    <h1>HR Employees List Page</h1>
+    <div class="panel panel-default">
+        <div class="panel-heading description">Employees list</div>
+        <div class="panel-body">
+            <div>
+                <p>
+                    <button onclick="showList()">Show List</button>
+                </p>
+            </div>
+            <div id="listcontainer"></div>
+            <div id="listcontainer3"></div>
+        </div>
+    </div>
+    <div>
+        <a href="index.html">Back to Home Page</a>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-heading description">
+            Add Employee
+        </div>
+        <div class="panel-body">
             <p>
-                <button onclick="showList()">Show List</button>
+                First Name: <input type="text" id="firstName"/>
+            </p>
+            <p>
+                Last Name: <input type="text" id="lastName"/>
+            </p>
+            <p>
+                Phone: <input type="text" id="phone"/>
+            </p>
+            <p>
+                Salary: <input type="number" id="salary"/>
+            </p>
+            <p>
+                <button onclick="addEmployee()"> Add Employee</button>
             </p>
         </div>
-        <div id="listcontainer"></div>
-        <div id="listcontainer3"></div>
     </div>
-</div>
-<div>
-    <a href="index.html">Back to Home Page</a>
-</div>
-<div class="panel panel-default">
-    <div class="panel-heading description">
-        Add Employee
-    </div>
-    <div class="panel-body">
-        <p>
-            First Name: <input type="text" id="firstName"/>
-        </p>
-        <p>
-            Last Name: <input type="text" id="lastName"/>
-        </p>
-        <p>
-            Phone: <input type="text" id="phone"/>
-        </p>
-        <p>
-            Salary: <input type="number" id="salary"/>
-        </p>
-        <p>
-            <button onclick="addEmployee()"> Add Employee</button>
-        </p>
-    </div>
-</div>
     <div>
         <p>
             <button onclick="calculate()">Salary total</button>
+            <button onclick="deleteEmployee()">Delete last employee</button>
+            <button onclick="convertSalary()">Convert salary</button>
         </p>
-
     </div>
-<div id="listcontainer2"></div>
-<div>
-    <p>
-        <button onclick="deleteEmployee()">Delete last employee</button>
-    </p>
-</div>
-<div>
-    <p>
-        <button onclick="convertSalary()">Convert salary</button>
-    </p>
-</div>
-<div>
-    <p>
-        <button onclick="sorteaza()">Sort by...</button><input type="text" id="sorttype"/>
-    </p>
-</div>
-<div>
-    <p>
-        <button onclick="cauta()">Search...</button><input type="text" id="cauta"/>
-    </p>
-</div>
-<div class="parent">
-    <img src="chuck.jpg" class="image" onmouseleave="hideImg()" onclick="showfacts()" id="img"/>
-    <div class="square" onmouseover="hideSqr()" id ="2"></div>
-</div>
+    <div id="listcontainer2"></div>
+
+    <div>
+        <p>
+            <button onclick="sorteaza()">Sort by...</button>
+            <input type="text" id="sorttype"/>
+        </p>
+    </div>
+    <div>
+        <p>
+            <button onclick="cauta()">Search...</button>
+            <input type="text" id="cauta"/>
+        </p>
+    </div>
+
+    <div class="parent">
+        <img src="chuck.jpg" class="image" onmouseleave="hideImg()" onclick="showFacts()" id="img"/>
+        <div class="square" onmouseover="hideSqr()" id ="square"></div>
+    </div>
 
 </body>
 </html>
