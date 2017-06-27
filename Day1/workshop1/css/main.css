@@ -1,0 +1,32 @@
+.description {
+
+    text-align: center;
+    color:#330099;
+}
+.table-bordered
+{
+    color:blueviolet;
+}
+
+.square{
+    background-color: black;
+    width:270px;
+    height:190px;
+    position: relative;
+    top:0;
+    left:0;
+    visibility: visible;
+}
+
+.image{
+    position: absolute;
+    visibility: hidden;
+    top:0;
+    left:0;
+}
+.parent{
+    position: relative;
+    top:0;
+    left:0;
+
+}
