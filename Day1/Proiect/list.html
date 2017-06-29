@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo HR</title>
+    <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" tupe="text/css" href="css/main.css"/>
+    <script type="text/javascript" src="scripts/app.js"></script>
+</head>
+<body>
+<h1>Employees List Page</h1>
+
+<div class="panel panel-default">
+    <div class="panel-heading description">
+        Employees list
+    </div>
+    <div class="panel-body">
+        <div>
+            <p>
+                <button onclick="showList()">Show list</button>
+            </p>
+        </div>
+            <div id="listcontainer">
+
+            </div>
+        <div>
+        <p>
+            <button onclick="salariutotal()">Salariu Total</button>
+        </p>
+        </div>
+        <div>
+            <div id="total">
+            </div>
+        </div>
+        <div>
+            <p>
+                <button onclick="deleteLast()">remove the last element</button>
+            </p>
+        </div>
+            <div>
+                <p>
+                    <button onclick="sort()">Sortare</button>
+                </p>
+            </div>
+        <div>
+            <p>
+                <button onclick="convert()">converteste salariu</button>
+            </p>
+            <div id="total2">
+            </div>
+        </div>
+        </div>
+    </div>
+<div>
+    <a href="index.html">Back to Home Page</a>
+</div>
+
+<div class = " panel panel-default">
+    <div class="panel-heading description">
+        Add employee
+    </div>
+    <div class="panel-body">
+        <p>
+            First Name: <input type="text" id="firstName"/>
+        </p>
+        <p>
+            Last Name: <input type="text" id="lastName"/>
+        </p>
+        <p>
+            Phone: <input type="text" id="phone"/>
+        </p>
+        <p>
+            Salary: <input type="number" id="salary"/>
+        </p>
+        <p>
+            SortBy: <input type="number"/>
+        </p>
+        <p>
+            <button onclick="addEmployee()">Add employee</button>
+        </p>
+        <p>
+            Filtrare: <input type="text" id="filtrare"/>
+        </p>
+
+
+    </div>
+
+    <div>
+
+
+        <p>
+            <button onclick="problema5()">sss</button>
+        </p>
+
+
+    </div>
+    <div id = "listcontainer4"></div>
+
+
+</div>
+</body>
+</html>

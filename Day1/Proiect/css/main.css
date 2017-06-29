@@ -1,0 +1,19 @@
+.description {
+    text-align: center ;
+    color:#330099;
+}
+
+#chuck2 {
+    position: relative;
+    z-index: +1;
+}
+
+img {
+    position: absolute;
+    z-index: -1;
+}
+
+#chuck {
+    position: absolute;
+    background-color: black;
+}
